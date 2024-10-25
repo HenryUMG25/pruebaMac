@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Bienvenido</h2>
+<p>Tu dirección IP es: @ViewBag.IPAddress</p>
+<p>Tu dirección MAC es: @ViewBag.MacAddress</p>
+
+<form asp-action="GetIpAndMac" method="post">
+    <button type="submit">Obtener IP y MAC</button>
+</form>
